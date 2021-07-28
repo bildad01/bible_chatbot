@@ -1,5 +1,6 @@
 from flask import Flask
 import word_by_situation
+import words
 
 app = Flask(__name__)       #웹서버 이름
 
