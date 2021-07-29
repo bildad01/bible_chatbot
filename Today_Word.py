@@ -6,3 +6,4 @@ def rdw():
     #random.sample(wordsList.random_words, 1)
 
 rdw()
+print(",.,.")
