@@ -9,7 +9,7 @@ def rdw():
 
     a = str("싫어")
     if a in user_say:
-        ans1 = str(" 이 구절부터 차근차근 시작해봐요! 화이팅!")
+        ans1 = str(" 이 구절부터 차근차근 시작해봐요! 화이팅!\n")
         ans2 = random.choice(wordsList.random_words)
 
         randidumdi = ans1 + "\n" + ans2

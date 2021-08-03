@@ -1,6 +1,6 @@
 from flask import Flask
 import word_by_situation
-import words
+from . import words
 import Today_Word
 
 app = Flask(__name__)       #웹서버 이름
@@ -18,8 +18,8 @@ def call_wbs():
 def call_rdw():
     return Today_Word.rdw()
 
-
-
+@app.route(/words, methods = ['POST'])
+def call_res
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
