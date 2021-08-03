@@ -18,8 +18,9 @@ def call_wbs():
 def call_rdw():
     return Today_Word.rdw()
 
-@app.route(/words, methods = ['POST'])
-def call_res
+@app.route('/words', methods = ['POST'])
+def call_
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
