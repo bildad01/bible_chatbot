@@ -203,11 +203,29 @@ def second_branch(reqData):
     return res
 
 
-def final_word():
-    a  = input() # 이부분 발화
-    for i in wordsList.words:
-        if a in i:
-            print("\n*** 한 구절만 읽는게 아니라 그 장 전체를 묵상하는 것이 좋아요***\n")
-            print(i)
+def final_word(reqData):
+  req = str(reqData['userRequest']['utterance'])
+  didicoco = ''
+  for i in wordsList.words:
+    if req in i:
+      sum1 = str("\n*** 한 구절만 읽는게 아니라 그 장 전체를 묵상하는 것이 좋아요***\n")
+      sum2 = print(i)
+      didicoco = sum1 + '\n' + sum2
+      break
+
+    res = {
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": didicoco
+                }
+            }
+        ]
+    }
+    }
+
+  return res
 
 final_word()

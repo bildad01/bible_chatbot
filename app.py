@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, request
 import word_by_situation
-from . import words
+import situation_word
 import Today_Word
+import situation_word
+
 
 app = Flask(__name__)       #웹서버 이름
 
@@ -18,8 +20,17 @@ def call_wbs():
 def call_rdw():
     return Today_Word.rdw()
 
-@app.route('/words', methods = ['POST'])
-def call_
+@app.route('/situation_word')
+
+@app.route('/situation_word', methods = ['POST'])
+def call_second_branch():
+    res = situation_word.second_branch(request.get_json())
+    return res
+
+
+
+
+
 
 
 if __name__ == '__main__':
