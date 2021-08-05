@@ -227,5 +227,3 @@ def final_word(reqData):
     }
 
   return res
-
-final_word()
