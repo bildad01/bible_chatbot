@@ -1,4 +1,3 @@
-from models import user
 from flask import request
 import random
 import wordsList

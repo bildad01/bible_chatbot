@@ -126,36 +126,3 @@ def dfasdf(reqData):
 
 
 
-
-# {
-#   "version": "2.0",
-#   "template": {
-#     "outputs": [
-#       {
-#         "basicCard": {
-#           "title": "말씀 보기",
-#           "description": "당신이 읽을 말씀은 무엇일까?",
-#           "thumbnail": {    #썸네일
-#             "imageUrl": "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg"
-#           },
-#           "profile": {
-#             "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BJ9LU4Ikr_EvZLmijfcjzQKMRCJ2bO3A8SVKNuQ78zu2KOqM",
-#             "nickname": "보물상자"
-#           },
-#           "social": {
-#             "like": 1238,
-#             "comment": 8,
-#             "share": 780
-#           },
-#           "buttons": [
-#             {
-#               "action": "message",
-#               "label": "열어보기",
-#               "messageText": "말씀 연결하기"
-#             },
-#           ]
-#         }
-#       }
-#     ]
-#   }
-# }
