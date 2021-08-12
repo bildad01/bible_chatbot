@@ -12,6 +12,7 @@ def rdw():
         ans2 = random.choice(wordsList.random_words)
 
         randidumdi = ans1 + "\n" + ans2
+        
     else:
         randidumdi = random.choice(wordsList.random_words)
     #random.sample(wordsList.random_words, 1)
