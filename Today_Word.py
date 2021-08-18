@@ -1,4 +1,5 @@
 from flask import request
+from flask import jsonify
 import random
 import wordsList
 
@@ -30,4 +31,4 @@ def rdw():
     }
 }
 
-    return res
+    return jsonify(res)

@@ -1,9 +1,10 @@
 from flask import current_app as app
-from models import db, migrate
+from models import db, migrate, thanks_list
 from flask import Flask, request
 import word_by_situation
 import situation_word
 import Today_Word
+import Thank_you
 import situation_word
 import os
 
@@ -38,16 +39,20 @@ def call_wbs():
 def call_rdw():
     return Today_Word.rdw()
 
-@app.route('/situation_word', methods = ['POST'])
+@app.route('/Thank_you' , methods = ['POST'])
+def call_ges():
+    return Thank_you.ges()
+
+@app.route('/first_branch', methods = ['POST'])
 def call_first_branch():
     return situation_word.res()
 
-@app.route('/situation_word', methods = ['POST'])
+@app.route('/second_branch', methods = ['POST'])
 def call_second_branch():
     res = situation_word.second_branch(request.get_json())
     return res
 
-@app.route('/situation_word', methods = ['POST'])
+@app.route('/final_word', methods = ['POST'])
 def call_final_word():
     rew = situation_word.final_word(request.get_json())
     return rew
